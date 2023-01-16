@@ -1,0 +1,161 @@
+:root {
+    /*** Fonts ***/
+    --ff-header: 'Anton', sans-serif;
+    --ff-subheader: 'Poppins', sans-serif;
+    --ff-primary: 'Quicksand', sans-serif;
+
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /*** Colors ***/
+    /* Primary */
+    --clr-green: hsl(80, 28%, 53%);
+    --clr-purple: hsl(242, 28%, 48%);
+    /* Neutral */
+    --clr-white: hsl(0, 0%, 98%);
+    --clr-light-gray: hsl(0, 0%, 88%);
+    --clr-dark-gray: hsl(0, 0%, 33%);
+}
+
+
+/************ Header Section ***********/
+
+/* Start of left side header styling */
+.left-header {
+    background-color: var(--clr-white);
+
+}
+
+.logo {
+    color: var(--clr-dark-gray);
+    font-family: var(--ff-header);
+    font-size: 30px;
+}
+
+.intro-txt {
+    padding-top: 80px;
+}
+
+.intro-txt p {
+    font-family: var(--ff-header);
+    color: var(--clr-dark-gray);
+    font-size: 38px;
+}
+
+.green-highlight {
+    color: var(--clr-green);
+}
+
+/* End of left side header styling */
+
+
+/* Start of right side header styling */
+.right-header {
+    background-color: var(--clr-green);
+}
+
+/* Navigation Bar Styling */
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data: image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' %3e%3cpath stroke='rgba%28120, 137, 85, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3e%3c/svg%3e");
+}
+
+.navbar-collapse {
+    background-color: var(--clr-green);
+}
+
+.nav-item:hover {
+    background-color: hsl(78, 30%, 74%);
+}
+
+.nav-link {
+    color: var(--clr-white);
+    font-family: var(--ff-subheader);
+    font-weight: var(--fw-semibold);
+}
+
+.nav-link:hover {
+    color: var(--clr-dark-gray);
+}
+
+/* End of right side header styling  */
+
+/*************** MEDIA QUERIES ***************/
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .logo  {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data: image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' %3e%3cpath stroke='rgba%28120, 137, 85, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3e%3c/svg%3e");
+    }
+
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .hero {
+        width: 72%;
+    }
+
+    .intro-txt {
+        padding-top: 30px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+    }
+
+    .nav-item:hover {
+        background-color: transparent;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn {
+        font-size: 25px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .intro-txt p {
+        font-size: 50px;
+    }
+}
+
+@media (min-width:1200px) {
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .intro-txt {
+        padding-top: 80px;
+    }
+
+    .intro-txt p {
+        font-size: 60px;
+        padding-right: 25px;
+    }
+}

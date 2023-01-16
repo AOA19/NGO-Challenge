@@ -476,19 +476,7 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"
       ></script>
-      <!-- Close Navbar when a link is clicked -->
-      <script>
-        const navLink = document.querySelectorAll(".nav-link");
-        const navBar = document.getElementById("navbarNav");
-        const navToggler = document.querySelector(".navbar-toggler");
-
-        // Close navbar when link is clicked
-        navLink.forEach((link) => link.addEventListener("click", closeNav));
-        function closeNav() {
-          navBar.classList.remove("show");
-          navToggler.classList.toggle("collapsed");
-        }
-      </script>
+      <script src="index.js"></script>
     </body>
   </head>
 </html>
